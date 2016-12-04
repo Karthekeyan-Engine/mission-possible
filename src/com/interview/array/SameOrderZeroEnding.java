@@ -1,4 +1,4 @@
-package com.interview.tree;
+package com.interview.array;
 
 import java.util.Arrays;
 
