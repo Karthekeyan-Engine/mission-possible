@@ -29,23 +29,14 @@ package com.interview.tree;
  *
  *		Top View of the Binary Tree
  *		2 1 3 6
+ *
+ *		Time Complexity: O(n) & Space Complexity: O(1)
  */
 
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
-
-class TreeNode {
-	
-	int data;
-	TreeNode left, right;
-	
-	public TreeNode(int data) {
-		this.data = data;
-		left = right = null;
-	}
-}
 
 // Every Queue item -> Node & Horizontal Distance of node from Root
 class QueueItem {
