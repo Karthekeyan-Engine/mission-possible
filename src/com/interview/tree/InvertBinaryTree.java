@@ -56,6 +56,18 @@ public class InvertBinaryTree {
 		return root;
 	}
 
+	//  Recursion Mirror Approach - Time Complexity: O(n) & Space Complexity: O(h)
+	public static TreeNode mirror(TreeNode root) {
+
+		if(root != null) {
+			TreeNode left = mirror(root.left);
+			TreeNode right = mirror(root.right);
+			root.left = right;
+			root.right = left;
+		}
+		return root;
+	}
+
 	// Iterative Approach - Time Complexity: O(n) & Space Complexity: O(n)
 	public static TreeNode invertBinaryTreeIterative(TreeNode root) {
 
@@ -87,5 +99,6 @@ public class InvertBinaryTree {
 
 		binaryTree.inorderTraversal(invertBinaryTreeRecursion(root));
 		binaryTree.inorderTraversal(invertBinaryTreeIterative(root));
+		binaryTree.inorderTraversal(mirror(root));
 	}
 }
