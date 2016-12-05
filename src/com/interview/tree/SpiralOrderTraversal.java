@@ -21,18 +21,19 @@ import java.util.Stack;
  *		Output : 1 2 3 7 6 5 4
  */
 
-
 public class SpiralOrderTraversal {
 	
 	// Iterative Approach - Time Complexity: O(n) & Space Complexity: O(n)
 	public void spiralPrinting(TreeNode root) {
+		
+		if(root == null) return;
 		
 		Stack<TreeNode> stack = new Stack<>();
 		stack.add(root);
 		
 		Queue<TreeNode> queue = new LinkedList<>();
 		
-		while(true) {
+		while(!stack.isEmpty() || !queue.isEmpty()) {
 			
 			while(!stack.isEmpty()) {
 				TreeNode current = stack.pop();
@@ -47,7 +48,6 @@ public class SpiralOrderTraversal {
 				if(current.left != null) stack.add(current.left);
 				if(current.right != null) stack.add(current.right);
 			}
-			if(stack.isEmpty() && queue.isEmpty()) break;
 		}
 	}
 
