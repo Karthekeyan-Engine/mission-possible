@@ -1,5 +1,36 @@
 package com.interview.tree;
 
+/*
+ *  Date: 5/12/2016
+ *  @Author Karthekeyan
+ *  
+ *  Question: Top View of Binary Tree
+ *  Description: Set of nodes visible when the tree is viewed from the top. 
+ *  Given a binary tree, print the top view of it. The output nodes can be printed in any order. 
+ *  
+ *		  		       1
+ *		 		     /   \
+ *		 		   2       3
+ *		 		  /  \    / \
+ *		 		 4    5  6   7
+ *		
+ *		Top View of the Binary Tree
+ *		4 2 1 3 7
+ *		
+ *	 		        1
+ *	 		      /   \
+ *	 		    2       3
+ *	 		      \   
+ *	 		        4  
+ *	 		          \
+ *	 		            5
+ *	 		             \
+ *	 		               6
+ *
+ *		Top View of the Binary Tree
+ *		2 1 3 6
+ */
+
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -91,7 +122,7 @@ public class TopViewBinaryTree {
 		
 		/*   Binary Tree
 				   1
-			    /     \
+			     /   \
 			   2       3
 			  /  \    / \
 			 4    5  6   7  */
