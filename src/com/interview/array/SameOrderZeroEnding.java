@@ -54,10 +54,8 @@ class SameOrderZeroEnding {
 	}
 
 	public static void main(String[] args) {
-
 		SameOrderZeroEnding zeroEnding = new SameOrderZeroEnding();
 		int[] givenArray = {7, 0, 0, 2, 0, 5, 8};
-
 		zeroEnding.zeroEndPusherMethod1(givenArray);
 		zeroEnding.zeroEndPusherMethod2(givenArray);
 	}
